@@ -76,8 +76,8 @@ class FancyLoader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 50,
-        height: 50,
+        width: 70,
+        height: 70,
         decoration: BoxDecoration(
           shape: BoxShape.circle, // دایره‌ای شکل
           border: Border.all(
