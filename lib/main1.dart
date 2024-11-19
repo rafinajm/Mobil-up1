@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("هرات باستان" ,style: TextStyle(fontSize: 40),),
+            Text("هرات باستان" ,style: TextStyle(fontSize: 40,color: Colors.black,fontWeight: FontWeight.bold),),
             SizedBox(height: 30,),
             // تصویر صفحه اول با گوشه‌های گرد
             ClipRRect(
@@ -172,9 +172,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(' هرات' ,style: TextStyle(fontSize: 30),),
-        backgroundColor: Colors.lightBlue,
+        backgroundColor: Colors.brown,
+        shadowColor: Colors.brown,
         actions: [
           PopupMenuButton<String>(
+            color: Colors.white60,
             onSelected: (value) {
               if (value == 'exit') {
                 Navigator.pop(context); // برای خروج
@@ -186,8 +188,8 @@ class HomePage extends StatelessWidget {
             },
             itemBuilder: (context) {
               return [
-                PopupMenuItem<String>(value: 'share', child: Text('اشتراک')),
-                PopupMenuItem<String>(value: 'about', child: Text('درباره')),
+                PopupMenuItem<String>(value: 'share', child: Text('شریک ساختن')),
+                PopupMenuItem<String>(value: 'about', child: Text('درباره ما')),
                 PopupMenuItem<String>(value: 'exit', child: Text('خروج')),
               ];
             },
@@ -268,7 +270,7 @@ class DistrictDetailPage extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 40),
             ElevatedButton(
               onPressed: () {
                 // اینجا می‌توانید کد برای نمایش اطلاعات بیشتر را وارد کنید
