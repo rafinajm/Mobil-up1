@@ -267,6 +267,31 @@ class DistrictDetailPage extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16),
             ),
+
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                // اینجا می‌توانید کد برای نمایش اطلاعات بیشتر را وارد کنید
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text('اطلاعات بیشتر'),
+                      content: Text('اطلاعات بیشتر درباره ${district.name}'),
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: Text('بستن'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: Text('اطلاعات بیشتر'),
+            ),
           ],
         ),
       ),
