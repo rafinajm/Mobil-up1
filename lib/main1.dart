@@ -39,6 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,10 +59,10 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             SizedBox(height: 40),
-            // لودر شیک
+            //
             FancyLoader(),
             SizedBox(height: 40,),
-            Text("By Rafi Najm"),
+            Text("By Rafi Najm",style: TextStyle(color: Colors.white),),
 
           ],
         ),
@@ -81,7 +82,7 @@ class FancyLoader extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle, // دایره‌ای شکل
           border: Border.all(
-            color: Colors.black,
+            color: Colors.white38,
             width: 5,
             style: BorderStyle.solid,
           ),
@@ -170,6 +171,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black12,
       appBar: AppBar(
         title: Text(' هرات' ,style: TextStyle(fontSize: 30),),
         backgroundColor: Colors.brown,
