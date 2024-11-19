@@ -81,7 +81,7 @@ class FancyLoader extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle, // دایره‌ای شکل
           border: Border.all(
-            color: Colors.blue,
+            color: Colors.black,
             width: 5,
             style: BorderStyle.solid,
           ),
