@@ -254,7 +254,9 @@ class DistrictDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('صفحه جزییات')),
+      appBar: AppBar(title: Text('صفحه جزییات'),
+        backgroundColor: Colors.blueGrey,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
