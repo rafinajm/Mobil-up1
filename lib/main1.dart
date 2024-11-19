@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("هرات باستان" ,style: TextStyle(fontSize: 40,color: Colors.black,fontWeight: FontWeight.bold),),
+            Text("هرات باستان" ,style: TextStyle(fontSize: 40,color: Colors.white54,fontWeight: FontWeight.bold),),
             SizedBox(height: 30,),
             // تصویر صفحه اول با گوشه‌های گرد
             ClipRRect(
