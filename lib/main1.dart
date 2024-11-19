@@ -252,7 +252,7 @@ class DistrictDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(district.name)),
+      appBar: AppBar(title: Text('صفحه جزییات')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
